@@ -1,0 +1,320 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="Shader" id=2]
+
+code = ""
+
+[sub_resource type="ShaderMaterial" id=3]
+
+render_priority = 0
+shader = SubResource( 2 )
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="Node2D" type="Node2D" index="0"]
+
+[node name="Camera2D" type="Camera2D" parent="." index="0"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.8, 0.8 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." index="2"]
+
+position = Vector2( -297.572, 73.0459 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." index="3"]
+
+position = Vector2( -290, -160 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="." index="4"]
+
+position = Vector2( -20, -160 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="." index="5"]
+
+position = Vector2( -20, -160 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="." index="6"]
+
+position = Vector2( -120, -10 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="." index="7"]
+
+position = Vector2( 140, 160 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="." index="8"]
+
+position = Vector2( 220, 90 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="." index="9"]
+
+position = Vector2( 140, 0 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="." index="10"]
+
+position = Vector2( 60, 60 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D11" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="." index="11"]
+
+position = Vector2( 50, 150 )
+scale = Vector2( 5, 5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D12" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." index="12"]
+
+position = Vector2( 74.8421, -134.117 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" index="0"]
+
+material = SubResource( 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="player" type="Node2D" parent="." index="13"]
+
+position = Vector2( -174.232, -118.55 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="player" index="0"]
+
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+
